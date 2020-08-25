@@ -54,3 +54,10 @@ npm install qs
 npm install @ant-design/compatible
 ~~~
 
+###  8.下载redux和redux-thunk
+
+~~~
+npm install --save redux react-redux redux-thunk
+npm install --save-dev redux-logger
+~~~
+
