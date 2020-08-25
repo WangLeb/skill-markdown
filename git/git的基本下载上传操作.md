@@ -14,13 +14,25 @@ git clone -b develop origin
 
 ```yaml
 #查看当前所具有的分支
-git branch
+git branch -a
 
 #查看当前所具有的分支（包含上一次push的记录）
 git branch -v  
 
+#切换分支
+git checkout branchName
+
+# 创建本地分支
+git checkout -b branchName
+
+# 本地分支传输到git生成远程分支
+git push --set-upstream origin develop
+
 #将分支与master合并
-git merge
+git merge master
+
+#merge出现（Merge made by the 'recursive' strategy.）
+存在代码没有push的情况，操作完成之后再merge就行
 ```
 
 ###  3.add 、commit
@@ -82,6 +94,13 @@ rm -f .git/index.lock //在无法删除文件的时候可以使用
 //删除文件后记得commit,往往不能提交是因为本地仓库的内容与暂存区的内容混乱
 //要记得有问题直接git status，查看git三层结构里面的内容
 ~~~
+
+###  5.分支
+
+```yaml
+
+
+```
 
 
 
